@@ -3,146 +3,119 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cures &amp; Massages | Cocozen</title>
-  <meta name="description" content="Découvrez les cures et massages bien-être de Cocozen à La Seyne-sur-Mer, Six-Fours, Saint-Mandrier et Ollioules.">
+  <title>Formations courtes – Bien-Être & Business</title>
+  <meta name="description" content="Catalogue de formations courtes massage : Californien, Kobido, Deep Tissue, prénatal à Toulon / La Seyne.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --vert:#66b3b0; --beige:#FFF6EA; --noir:#000; }
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin:0; font-family:'Manrope',sans-serif; color:var(--noir); background:#fff; line-height:1.7; }
+    header { padding:22px 24px; border-bottom:1px solid #f0f0f0; }
+    nav a { margin-right: 14px; text-decoration:none; color:var(--noir); font-weight:500; }
+    section { padding:80px 24px; }
+    .container { max-width: 1100px; margin:0 auto; }
+    .hero { background:var(--beige); border-radius:32px; padding:60px; }
+    h1,h2,h3 { margin:0 0 16px; }
+    p { margin:0 0 14px; }
+    .grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); gap:24px; }
+    .card { border:1px solid #f3f3f3; border-radius:24px; padding:28px; background:#fff; box-shadow:0 10px 30px rgba(0,0,0,0.05); }
+    ul { margin:0; padding-left:18px; }
+    li { margin-bottom:10px; }
+    .tag { display:inline-block; padding:6px 16px; border-radius:999px; background:rgba(102,179,176,0.2); color:var(--vert); font-weight:600; margin-bottom:16px; }
+    .btn { display:inline-flex; align-items:center; justify-content:center; padding:14px 26px; border-radius:999px; text-decoration:none; font-weight:600; }
+    .btn-primary { background:var(--vert); color:#fff; }
+    .btn-outline { border:1px solid var(--vert); color:var(--vert); }
+    .cta-block { text-align:center; padding:60px; background:var(--beige); border-radius:36px; }
+    @media(max-width:700px){ .hero{padding:40px;} }
+  </style>
 </head>
 <body>
   <header>
-    <div class="container navbar">
-      <div class="logo">Cocozen</div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="cures-massages.html">Cures &amp; Massages</a></li>
-          <li><a href="a-propos.html">À propos</a></li>
-          <li><a href="formations.html">Formations</a></li>
-          <li><a href="avis.html">Avis</a></li>
-          <li><a href="infos-pratiques.html">Infos pratiques</a></li>
-          <li><a href="contact.html" class="cta">Réserver</a></li>
-        </ul>
-      </nav>
-    </div>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="formations.html">Formation Signature</a>
+      <a href="infos-pratiques.html">Calendrier</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="container hero-content">
-        <div class="hero-text">
-          <h1>Massages et cures personnalisées pour un équilibre durable</h1>
-          <p>Des soins conçus pour les femmes qui souhaitent retrouver énergie et sérénité, sans quitter leur cocon.</p>
-          <a class="btn" href="contact.html">Réserver ma séance</a>
+    <section>
+      <div class="container hero">
+        <p class="tag">Formations 1 à 3 jours</p>
+        <h1>Formations courtes & immersions Bien-Être</h1>
+        <p>Idéales pour découvrir la pratique ou ajouter une spécialité à ton activité. Sessions en mini-groupes à Toulon / La Seyne avec supervision personnalisée.</p>
+        <div class="btn-group">
+          <a class="btn btn-primary" href="https://www.coraliemontreuil.fr/catalogue-formation" target="_blank" rel="noopener">Voir le catalogue complet</a>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section>
       <div class="container">
-        <h2>Les massages à domicile</h2>
-        <div class="cards-grid">
-          <article class="card">
-            <h3>Massage Signature Cocozen – 75 min</h3>
-            <p>Une invitation à la détente profonde. Gestes enveloppants, huiles chaudes et drainage doux pour libérer les tensions et fluidifier l’énergie.</p>
-            <p><strong>85 €</strong> – disponible à La Seyne-sur-Mer, Six-Fours, Saint-Mandrier et Ollioules.</p>
-          </article>
-          <article class="card">
-            <h3>Massage prénatal – 60 min</h3>
-            <p>Spécialement conçu pour soulager le dos, les jambes lourdes et apaiser le mental. Position latérale confortable et coussins d’allaitement.</p>
-            <p><strong>75 €</strong> – adapté à partir du 4e mois de grossesse.</p>
-          </article>
-          <article class="card">
-            <h3>Massage drainage &amp; légèreté – 60 min</h3>
-            <p>Techniques inspirées du drainage lymphatique pour relancer la circulation, réduire la rétention d’eau et redonner de la vitalité.</p>
-            <p><strong>70 €</strong> – idéal en complément d’une cure bien-être.</p>
-          </article>
+        <h2>Types de massages proposés</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Californien intuitif</h3>
+            <p>Gestuelle enveloppante, rythmes lents et connexion à la respiration pour les reconversions qui débutent.</p>
+          </div>
+          <div class="card">
+            <h3>Kobido & glow facial</h3>
+            <p>Travail du visage, manœuvres liftantes et drainage doux pour compléter une offre esthétique.</p>
+          </div>
+          <div class="card">
+            <h3>Deep Tissue & posture</h3>
+            <p>Protocoles musculaires profonds, ergonomie du praticien, intégration de la somatothérapie.</p>
+          </div>
+          <div class="card">
+            <h3>Prénatal & postnatal</h3>
+            <p>Accompagnement des futures mamans, installation sécurisée et communication douce.</p>
+          </div>
+          <div class="card">
+            <h3>Signature Bien-Être & Business</h3>
+            <p>Création de ton propre rituel, ancrage, accueil émotionnel et expérience client premium.</p>
+          </div>
+          <div class="card">
+            <h3>Immersion découverte</h3>
+            <p>3 jours pour toucher du doigt la pratique professionnelle et valider ton projet de reconversion.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container two-column">
-        <div>
-          <h2>Les cures ressourçantes</h2>
-          <p>Conçues pour accompagner un changement de saison, un post-partum, une période de stress ou une démarche de mieux-être. Chaque cure débute par un bilan personnalisé.</p>
-        </div>
-        <div>
-          <article class="card">
-            <h3>Cure Vitalité – 3 séances</h3>
-            <p>Séances hebdomadaires combinant drainage, massage énergétique et relaxation guidée pour retrouver du tonus.</p>
-            <p><strong>195 €</strong> – suivi individuel et conseils bien-être.</p>
-          </article>
-          <article class="card">
-            <h3>Cure Post-partum – 5 séances</h3>
-            <p>Rituels réconfortants mêlant rebozo, resserrage du bassin, drainage doux et massage nourrissant pour accompagner le corps dans sa récupération.</p>
-            <p><strong>320 €</strong> – possibilité de régler en deux fois.</p>
-          </article>
-          <article class="card">
-            <h3>Cure Saisons – 4 séances</h3>
-            <p>Préparez votre corps aux changements climatiques avec des soins ciblés : exfoliation douce, enveloppement végétal et massage énergétique.</p>
-            <p><strong>260 €</strong> – disponible automne &amp; printemps.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section highlight">
-      <div class="container">
-        <h3>Chaque soin débute par un échange</h3>
-        <p>15 minutes dédiées à l’écoute de vos besoins, votre état émotionnel et vos attentes. Coralie apporte tout le matériel (table, draps, huiles, musique).</p>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container two-column">
-        <div>
-          <h2>Options complémentaires</h2>
-          <ul class="info-list">
-            <li class="info-item"><span>Bol Kansu</span>Massage des pieds revitalisant au bol tibétain pour harmoniser le sommeil.</li>
-            <li class="info-item"><span>Rebozo</span>Serrage du bassin et rituel de fermeture pour les mamans.</li>
-            <li class="info-item"><span>Cartes d’intentions</span>Tirage intuitif pour poser un mantra à la fin du soin.</li>
+    <section>
+      <div class="container grid">
+        <div class="card">
+          <h2>Format & rythme</h2>
+          <ul>
+            <li>1 à 3 jours selon la thématique.</li>
+            <li>Groupes de 4 à 6 participantes.</li>
+            <li>Support pédagogique, fiches protocoles, vidéos de révision.</li>
           </ul>
         </div>
-        <div>
-          <blockquote>
-            “Une présence douce et professionnelle. Coralie a su adapter chaque séance selon mon énergie du moment.”
-            <strong>– Sophie, Ollioules</strong>
-          </blockquote>
+        <div class="card">
+          <h2>Tarif préférentiel</h2>
+          <p>Bénéficie d’un tarif doux lorsque tu réserves plusieurs modules au même trimestre. Possibilité de pack reconversion (immersion + spécialité).</p>
+        </div>
+        <div class="card">
+          <h2>Présentiel Var 83</h2>
+          <p>Les formations ont lieu à Toulon / La Seyne-sur-Mer, dans un espace lumineux équipé des tables, huiles et matériel.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container cta-block">
+        <h2>Réserve ta place</h2>
+        <p>Parle-moi de ta pratique actuelle et choisis la session qui t’aidera à progresser.</p>
+        <div class="btn-group" style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+          <a class="btn btn-outline" href="https://www.coraliemontreuil.fr/catalogue-formation" target="_blank" rel="noopener">Voir le catalogue complet</a>
+          <a class="btn btn-primary" href="contact.html">S’inscrire</a>
         </div>
       </div>
     </section>
   </main>
-
-  <footer>
-    <div class="container footer-grid">
-      <div>
-        <div class="logo">Cocozen</div>
-        <p>Massages bien-être à domicile avec Coralie Montreuil – La Seyne-sur-Mer et alentours.</p>
-      </div>
-      <div>
-        <h4 class="footer-title">Coordonnées</h4>
-        <p>06 12 34 56 78<br>contact@cocozen.fr<br>La Seyne-sur-Mer</p>
-      </div>
-      <div>
-        <h4 class="footer-title">Explorer</h4>
-        <ul class="info-list">
-          <li><a href="formations.html">Formations</a></li>
-          <li><a href="contact.html">Réserver une séance</a></li>
-          <li><a href="infos-pratiques.html">Infos pratiques</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="footer-title">Suivez Cocozen</h4>
-        <div class="social-links">
-          <a href="https://www.instagram.com" aria-label="Instagram">Instagram</a>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2024 Cocozen – Coralie Montreuil. Tous droits réservés. <a href="mentions-legales-cgv.html">Mentions légales &amp; CGV</a></p>
-    </div>
-  </footer>
 </body>
 </html>
