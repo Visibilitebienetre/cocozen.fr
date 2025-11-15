@@ -3,118 +3,188 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formations bien-être | Cocozen</title>
-  <meta name="description" content="Ateliers et formations bien-être animés par Coralie Montreuil à La Seyne-sur-Mer et en ligne.">
+  <title>Offre Premium Signature – Bien-Être & Business</title>
+  <meta name="description" content="Formation Bien-Être & Business : techniques de massage, posture psychocorporelle et stratégie d'activité pour praticiennes alignées.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --vert: #66b3b0;
+      --beige: #FFF6EA;
+      --noir: #000000;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Manrope', sans-serif;
+      color: var(--noir);
+      background: #fff;
+      line-height: 1.7;
+    }
+    header { border-bottom: 1px solid #f0f0f0; background: #fff; }
+    .header-inner { max-width: 1100px; margin: 0 auto; padding: 20px 24px; display: flex; justify-content: space-between; align-items: center; }
+    nav { display: flex; gap: 12px; flex-wrap: wrap; }
+    nav a { text-decoration: none; color: var(--noir); padding: 8px 16px; border-radius: 999px; }
+    nav a.cta { background: var(--vert); color: #fff; }
+    section { padding: 80px 24px; }
+    .container { max-width: 1100px; margin: 0 auto; }
+    .hero { background: var(--beige); }
+    h1, h2, h3 { margin: 0 0 16px; line-height: 1.2; }
+    p { margin: 0 0 16px; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; padding: 14px 30px; border-radius: 999px; text-decoration: none; font-weight: 600; }
+    .btn-primary { background: var(--vert); color: #fff; }
+    .grid-two { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 32px; }
+    .card { border: 1px solid #f3f3f3; border-radius: 24px; padding: 32px; background: #fff; box-shadow: 0 12px 35px rgba(0,0,0,0.05); }
+    ul { margin: 0; padding-left: 18px; }
+    li { margin-bottom: 10px; }
+    .info-table { width: 100%; border-collapse: collapse; }
+    .info-table th, .info-table td { padding: 16px 18px; border: 1px solid #f1f1f1; }
+    .info-table th { background: var(--beige); text-align: left; }
+    blockquote { margin: 0; padding: 32px; border-radius: 24px; background: #fff; border: 1px solid #f0f0f0; font-style: italic; box-shadow: 0 10px 30px rgba(0,0,0,0.04); }
+    .badge { display: inline-block; padding: 6px 18px; border-radius: 999px; background: rgba(102,179,176,0.15); color: var(--vert); font-weight: 600; margin-bottom: 20px; }
+    @media (max-width: 768px) {
+      .header-inner { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
 </head>
 <body>
   <header>
-    <div class="container navbar">
-      <div class="logo">Cocozen</div>
+    <div class="header-inner">
+      <div class="logo">Bien-Être & Business</div>
       <nav>
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="cures-massages.html">Cures &amp; Massages</a></li>
-          <li><a href="a-propos.html">À propos</a></li>
-          <li><a href="formations.html">Formations</a></li>
-          <li><a href="avis.html">Avis</a></li>
-          <li><a href="infos-pratiques.html">Infos pratiques</a></li>
-          <li><a href="contact.html" class="cta">Réserver</a></li>
-        </ul>
+        <a href="index.html">Accueil</a>
+        <a href="cures-massages.html">Formations courtes</a>
+        <a href="infos-pratiques.html">Calendrier</a>
+        <a href="contact.html" class="cta">Appeler Coralie</a>
       </nav>
     </div>
   </header>
 
   <main>
     <section class="hero">
-      <div class="container hero-content">
-        <div class="hero-text">
-          <h1>Formations et ateliers pour prendre soin de soi et des autres</h1>
-          <p>Des espaces d’apprentissage doux pour les femmes, professionnelles du bien-être ou mamans en quête de rituels.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
       <div class="container">
-        <h2>Les programmes Cocozen</h2>
-        <div class="cards-grid">
-          <article class="card">
-            <h3>Atelier auto-massage &amp; relaxation</h3>
-            <p>2h pour apprendre des gestes simples et des respirations apaisantes à reproduire chez soi. Supports PDF et audio inclus.</p>
-            <p><strong>55 € / personne</strong> – en petit groupe à La Seyne-sur-Mer.</p>
-          </article>
-          <article class="card">
-            <h3>Formation massage prénatal</h3>
-            <p>Module de 3 jours pour les praticiennes souhaitant accompagner les futures mamans. Approche sécurisée, anatomie et protocoles.</p>
-            <p><strong>480 €</strong> – possibilité de financement via CPF (sur demande).</p>
-          </article>
-          <article class="card">
-            <h3>Cercle de femmes &amp; sonothérapie</h3>
-            <p>Une journée pour explorer le pouvoir du son, des bols et de la vibration. Méditations guidées, chant intuitif et cohérence de groupe.</p>
-            <p><strong>120 €</strong> – dates trimestrielles.</p>
-          </article>
-        </div>
+        <p class="badge">Offre Premium Signature</p>
+        <h1>Bien-Être & Business – devenir praticienne alignée</h1>
+        <p>Un parcours hybride de 6 mois pour maitriser les techniques de massage, développer une posture psychocorporelle solide et structurer une activité bien-être stable à La Seyne-sur-Mer.</p>
+        <a class="btn btn-primary" href="tel:+33618864634">Appeler Coralie</a>
       </div>
     </section>
 
-    <section class="section two-column">
-      <div class="container two-column">
+    <section>
+      <div class="container grid-two">
         <div>
-          <h2>Accompagnement pédagogique</h2>
-          <p>Chaque formation inclut un suivi post-session pendant 30 jours via un groupe privé Système.io. Vous recevez des conseils personnalisés et des fiches pratiques pour intégrer les techniques.</p>
+          <h2>🌿 Une formation complète & humaine</h2>
+          <p>Un mini-groupe de femmes en reconversion, des pratiques guidées et un accompagnement professionnel centré sur ton rythme. Nous mêlons massage, somatothérapie et stratégie business pour que tu te sentes compétente et légitime.</p>
         </div>
         <div>
-          <h3>Supports fournis</h3>
-          <ul class="info-list">
-            <li class="info-item"><span>Manuels PDF</span>Protocoles détaillés, check-lists, mémos bien-être.</li>
-            <li class="info-item"><span>Vidéos</span>Accès à une bibliothèque de mouvements filmés.</li>
-            <li class="info-item"><span>Audios</span>Méditations guidées pour vos clientes et pour vous-même.</li>
+          <h2>🌸 Au programme</h2>
+          <ul>
+            <li>Immersions pratiques sur table : fluidité des gestes, ancrage, ergonomie.</li>
+            <li>Ateliers psychocorporels pour écouter le corps et poser ta posture.</li>
+            <li>Stratégie d’activité : offres, visibilité locale, process client.</li>
+            <li>Mentorat humain : sessions individuelles pour lever les blocages.</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <section class="section highlight">
-      <div class="container">
-        <h3>Privatiser une formation</h3>
-        <p>Coralie se déplace dans votre espace ou propose des sessions en visioconférence. Contactez-nous pour construire un programme sur mesure pour votre équipe.</p>
-        <a class="btn" href="contact.html">Demander un devis</a>
+    <section>
+      <div class="container grid-two">
+        <div class="card">
+          <h3>💆‍♀️ Techniques professionnelles</h3>
+          <p>Apprentissage progressif des manœuvres californiennes, deep tissue, drainage, prénatal et protocoles signature. Chaque séquence inclut observation, pratique supervisée et feedback précis.</p>
+        </div>
+        <div class="card">
+          <h3>🌿 Posture psychocorporelle</h3>
+          <p>Respiration, ancrage, régulation émotionnelle, présence au toucher. Tu explores la somatothérapie pour mieux accueillir les clientes et éviter l’épuisement.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container grid-two">
+        <div class="card">
+          <h3>💎 Stratégie activité</h3>
+          <ul>
+            <li>Création d’offres alignées et rentables.</li>
+            <li>Construction d’un mini-site ou page Systeme.io, Google Business Profile et premiers avis.</li>
+            <li>Plan visibilité douce pour trouver tes 10 premiers clients.</li>
+            <li>Accompagnement à la tarification et à la communication authentique.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>🤝 Accompagnement personnalisé prolongé</h3>
+          <p>Suivi collectif et individuel après l’immersion : supervision de tes séances, relecture d’offres, support WhatsApp et appels de cadrage pour sécuriser le lancement.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container grid-two">
+        <div>
+          <h2>📍 Informations pratiques</h2>
+          <ul>
+            <li>Durée : 6 mois – alternance de 3 jours intensifs + sessions en ligne.</li>
+            <li>Lieu : La Seyne-sur-Mer (Var – 83), salle intimiste aménagée.</li>
+            <li>Format : mini groupe de 6 femmes maximum.</li>
+            <li>Suivi : supervision, plateforme ressources, groupe privé.</li>
+          </ul>
+        </div>
+        <div>
+          <h2>💫 Résultats concrets</h2>
+          <ul>
+            <li>Posture professionnelle ancrée et confiante.</li>
+            <li>Protocoles personnalisés prêts à être proposés.</li>
+            <li>Stratégie visibilité + plan d’action 10 premiers clients.</li>
+            <li>Certification Bien-Être & Business.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container grid-two">
+        <div class="card">
+          <h2>💰 Investissement</h2>
+          <p>Offre Premium Signature – 2 850 € TTC.<br>Facilités de paiement possibles après l’appel découverte.</p>
+        </div>
+        <div class="card">
+          <h2>🌷 Tableau Tu veux / Tu obtiens</h2>
+          <table class="info-table">
+            <tr>
+              <th>Tu veux…</th>
+              <th>Tu obtiens…</th>
+            </tr>
+            <tr>
+              <td>Découvrir le massage de manière professionnelle.</td>
+              <td>Des protocoles détaillés, des temps de pratique guidés et une supervision continue.</td>
+            </tr>
+            <tr>
+              <td>Te sentir légitime et ancrée.</td>
+              <td>Une posture psychocorporelle nourrie, des outils pour réguler tes émotions et tenir ton cadre.</td>
+            </tr>
+            <tr>
+              <td>Vivre du bien-être avec stabilité.</td>
+              <td>Un plan business concret : site, visibilité locale, stratégie des 10 premiers clients.</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container grid-two">
+        <blockquote>
+          « Ce parcours m’a permis d’oser passer du rêve à l’action. Entre la précision technique, la posture psychocorporelle et l’accompagnement business, j’ai lancé mon activité avec sérénité. »<br><strong>Élodie</strong>
+        </blockquote>
+        <div class="card">
+          <h3>Besoin d’échanger ?</h3>
+          <p>Un appel découverte permet de vérifier que l’offre Premium Signature répond à tes attentes et de réserver ta place.</p>
+          <a class="btn btn-primary" href="tel:+33618864634">Appeler Coralie</a>
+        </div>
       </div>
     </section>
   </main>
-
-  <footer>
-    <div class="container footer-grid">
-      <div>
-        <div class="logo">Cocozen</div>
-        <p>Massages bien-être à domicile avec Coralie Montreuil – La Seyne-sur-Mer et alentours.</p>
-      </div>
-      <div>
-        <h4 class="footer-title">Coordonnées</h4>
-        <p>06 12 34 56 78<br>contact@cocozen.fr<br>La Seyne-sur-Mer</p>
-      </div>
-      <div>
-        <h4 class="footer-title">Explorer</h4>
-        <ul class="info-list">
-          <li><a href="formations.html">Formations</a></li>
-          <li><a href="contact.html">Réserver une séance</a></li>
-          <li><a href="infos-pratiques.html">Infos pratiques</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="footer-title">Suivez Cocozen</h4>
-        <div class="social-links">
-          <a href="https://www.instagram.com" aria-label="Instagram">Instagram</a>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2024 Cocozen – Coralie Montreuil. Tous droits réservés. <a href="mentions-legales-cgv.html">Mentions légales &amp; CGV</a></p>
-    </div>
-  </footer>
 </body>
 </html>

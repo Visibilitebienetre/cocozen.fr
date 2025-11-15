@@ -3,155 +3,313 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cocozen | Massages bien-être à domicile à La Seyne-sur-Mer</title>
-  <meta name="description" content="Coralie Montreuil, praticienne bien-être Cocozen, propose des massages à domicile sur La Seyne-sur-Mer, Six-Fours, Saint-Mandrier et Ollioules.">
+  <title>Bien-Être & Business | Accueil</title>
+  <meta name="description" content="Parcours de formation en massage, posture psychocorporelle et stratégie d'activité avec Coralie Montreuil.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --vert: #66b3b0;
+      --beige: #FFF6EA;
+      --noir: #000000;
+      --gris: #f5f5f5;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Manrope', 'Segoe UI', sans-serif;
+      color: var(--noir);
+      background: #ffffff;
+      line-height: 1.7;
+    }
+    header {
+      background: #ffffff;
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    nav { display: flex; gap: 12px; flex-wrap: wrap; justify-content: flex-end; }
+    nav a {
+      text-decoration: none;
+      color: var(--noir);
+      font-weight: 500;
+      padding: 8px 14px;
+      border-radius: 999px;
+      transition: background 0.3s ease;
+    }
+    nav a.cta {
+      background: var(--vert);
+      color: #fff;
+    }
+    nav a:hover { background: var(--beige); }
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .logo {
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: var(--vert);
+      font-size: 1.1rem;
+    }
+    section {
+      padding: 90px 24px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .hero {
+      background: var(--beige);
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 40px;
+      align-items: center;
+    }
+    h1, h2, h3, h4 {
+      font-weight: 600;
+      line-height: 1.2;
+      margin: 0 0 18px;
+    }
+    p { margin: 0 0 16px; }
+    .tagline {
+      font-size: 1rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--vert);
+    }
+    .btn-group { display: flex; flex-wrap: wrap; gap: 12px; }
+    .btn {
+      border-radius: 999px;
+      padding: 14px 28px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border: 1px solid transparent;
+      transition: all 0.3s ease;
+    }
+    .btn-primary { background: var(--vert); color: #fff; }
+    .btn-outline { border-color: var(--vert); color: var(--vert); }
+    .btn-primary:hover { opacity: 0.9; }
+    .btn-outline:hover { background: var(--beige); }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+    }
+    .card {
+      padding: 32px;
+      border-radius: 24px;
+      border: 1px solid #f0f0f0;
+      background: #fff;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.05);
+    }
+    .muted-card {
+      background: var(--beige);
+    }
+    ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+    .list-check li {
+      list-style: none;
+      margin-bottom: 12px;
+      position: relative;
+      padding-left: 32px;
+    }
+    .list-check li::before {
+      content: '✔';
+      position: absolute;
+      left: 0;
+      color: var(--vert);
+      font-weight: 600;
+    }
+    .testimonials {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    blockquote {
+      margin: 0;
+      padding: 24px;
+      border-radius: 20px;
+      background: #fff;
+      border: 1px solid #f2f2f2;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+      font-style: italic;
+    }
+    .contact-panel {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 40px;
+      align-items: center;
+    }
+    .footer {
+      background: #fdfdfd;
+      padding: 40px 24px;
+      border-top: 1px solid #ececec;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 32px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .footer a { color: var(--vert); text-decoration: none; }
+    @media (max-width: 768px) {
+      header { position: static; }
+      .header-inner { flex-direction: column; align-items: flex-start; }
+      nav { width: 100%; }
+      .hero { padding-top: 70px; }
+    }
+  </style>
 </head>
 <body>
   <header>
-    <div class="container navbar">
-      <div class="logo">Cocozen</div>
+    <div class="header-inner">
+      <div class="logo">Bien-Être & Business</div>
       <nav>
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="cures-massages.html">Cures &amp; Massages</a></li>
-          <li><a href="a-propos.html">À propos</a></li>
-          <li><a href="formations.html">Formations</a></li>
-          <li><a href="avis.html">Avis</a></li>
-          <li><a href="infos-pratiques.html">Infos pratiques</a></li>
-          <li><a href="contact.html" class="cta">Réserver</a></li>
-        </ul>
+        <a href="index.html">Accueil</a>
+        <a href="formations.html">Formation Signature</a>
+        <a href="cures-massages.html">Formations courtes</a>
+        <a href="infos-pratiques.html">Calendrier</a>
+        <a href="avis.html">Témoignages</a>
+        <a href="contact.html" class="cta">Contact</a>
       </nav>
     </div>
   </header>
 
   <main>
     <section class="hero">
-      <div class="container hero-content">
-        <div class="hero-text">
-          <h1>Offrez à votre corps un moment de soin complet à domicile sur La Seyne-sur-Mer</h1>
-          <p>Massages bien-être, cures personnalisées et rituels énergétiques pour apaiser le corps et le mental. Coralie se déplace chez vous à La Seyne-sur-Mer, Six-Fours, Saint-Mandrier et Ollioules.</p>
-          <div class="cta-group">
-            <a class="btn" href="cures-massages.html">Découvrir les soins</a>
-            <a class="btn btn-secondary" href="contact.html">Réserver ma séance</a>
+      <div class="container hero-grid">
+        <div>
+          <p class="tagline">Parcours Bien-Être & Business</p>
+          <h1>💫 Deviens praticienne en massage & bien-être alignée, confiante et épanouie</h1>
+          <p>Un accompagnement professionnel et humain pour apprendre, te transformer et vivre sereinement de ta passion.</p>
+          <div class="btn-group">
+            <a class="btn btn-primary" href="formations.html">Découvrir la formation signature</a>
+            <a class="btn btn-outline" href="contact.html">Demander un appel découverte</a>
           </div>
         </div>
-        <div class="hero-visual">
-          <img src="https://images.unsplash.com/photo-1584466977773-e625c37cdd50?auto=format&fit=crop&w=900&q=80" alt="Massage bien-être relaxant">
+        <div class="card muted-card">
+          <h3>Positionnement officiel</h3>
+          <p>« J’ai une entreprise de formation et d’accompagnement en bien-être pour les femmes en reconversion ou praticiennes du mieux-être, qui se sentent perdues, fatiguées ou en manque de confiance dans leur posture professionnelle, et je les aide à devenir des praticiennes alignées, compétentes et épanouies, en unissant les techniques de massage, l’approche psychocorporelle et la stratégie d’activité, grâce à un parcours hybride Bien-Être & Business, à la fois humain, professionnel et transformateur. »</p>
+          <p>« Avec Bien-Être & Business, j’accompagne les femmes en reconversion à découvrir le massage, à développer une posture ancrée et à construire une activité stable et confiante. Tu peux commencer par une immersion de 3 jours pour explorer la pratique, ou t’engager dans un parcours complet de 6 mois pour devenir praticienne certifiée, alignée et indépendante. »</p>
         </div>
       </div>
     </section>
 
-    <section class="section" id="soins">
+    <section>
+      <div class="container card-grid">
+        <article class="card">
+          <h2>Présentation de Coralie</h2>
+          <p>De 2015 à 2025, Coralie Montreuil a accompagné des centaines de femmes grâce aux massages, à la somatothérapie et à un solide parcours de formatrice certifiée. Elle relie les mains, le cœur et l’esprit entrepreneurial pour transmettre une posture entière.</p>
+          <p>Formée aux techniques de massage bien-être et à la somatothérapie, elle détient le Titre Professionnel de Formateur. Sa vision : marier la précision technique, la posture psychocorporelle et la stratégie d’activité pour que chaque praticienne se sente légitime et sereine.</p>
+        </article>
+        <article class="card">
+          <h2>Formation Signature</h2>
+          <p>Le parcours hybride Bien-Être & Business combine immersion pratique, accompagnement psychocorporel et mentorat stratégique. Tu explores les techniques de massage, tu poses les bases d’une relation client éthique et tu structures une activité stable.</p>
+          <a class="btn btn-primary" href="formations.html">Recevoir le programme complet</a>
+        </article>
+        <article class="card">
+          <h2>Formations courtes</h2>
+          <p>Immersions de 1 à 3 jours pour découvrir ou compléter ta pratique : Californien, Kobido, Deep Tissue, prénatal et spécialités Bien-Être & Business. Idéal pour faire un premier pas ou enrichir ta palette.</p>
+          <a class="btn btn-outline" href="cures-massages.html">Détail des formations & sessions</a>
+        </article>
+      </div>
+    </section>
+
+    <section>
       <div class="container">
-        <h2>Des massages sur-mesure pour sublimer votre bien-être</h2>
-        <div class="cards-grid">
-          <article class="card">
-            <h3>Cures ressourçantes</h3>
-            <p>Programmes de 3 à 6 séances pour accompagner un changement de saison, un post-partum ou une période de stress intense. Chaque cure est ajustée après un échange individuel.</p>
-          </article>
-          <article class="card">
-            <h3>Massages à domicile</h3>
-            <p>Détente californienne, signature Cocozen ou massage prénatal : Coralie amène la bulle de douceur chez vous à La Seyne-sur-Mer, Six-Fours, Saint-Mandrier et Ollioules.</p>
-          </article>
-          <article class="card">
-            <h3>Rituels énergétiques</h3>
-            <p>Rééquilibrez vos énergies grâce à des soins mélangeant techniques manuelles, huiles végétales et bols chantants pour un lâcher-prise profond.</p>
-          </article>
+        <h2>Pourquoi choisir Bien-Être & Business</h2>
+        <div class="card-grid">
+          <div class="card">
+            <ul class="list-check">
+              <li>Formations professionnelles pour femmes en reconversion.</li>
+              <li>Approche globale corps, cœur, esprit et business.</li>
+              <li>Accompagnement humain et individualisé.</li>
+              <li>Stratégie d’activité & visibilité guidée pas à pas.</li>
+              <li>Mission : t’aider à vivre du bien-être avec confiance.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Accompagnements disponibles</h3>
+            <p>Immersion de 3 jours pour goûter aux techniques professionnelles, programme Signature de 6 mois pour devenir praticienne certifiée. Sessions en mini-groupes à La Seyne-sur-Mer, combinant ateliers pratiques, supervision et coaching business.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section highlight">
+    <section>
       <div class="container">
-        <h3>Une expertise dédiée aux femmes et aux mamans</h3>
-        <p>Praticienne certifiée en massage bien-être et périnatalité, Coralie vous accompagne en douceur, du pré-natal au post-partum, pour vous aider à vous reconnecter à votre corps et à votre énergie.</p>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container two-column">
-        <div>
-          <h2>L’art du toucher thérapeutique</h2>
-          <p>Chaque séance débute par un temps de parole pour ajuster l’intention du massage. Les huiles végétales, choisies en fonction de vos besoins, respectent votre peau et vos valeurs. Un rituel de respiration douce et d’ancrage conclut la séance pour intégrer les bienfaits.</p>
-        </div>
-        <div>
-          <h3>Une approche globale et holistique</h3>
-          <ul class="info-list">
-            <li class="info-item"><span>Douceur</span>Gestes fluides, pressions enveloppantes, ambiance sonore apaisante.</li>
-            <li class="info-item"><span>Expertise</span>Techniques inspirées du californien, suédois, drainage lymphatique et réflexologie.</li>
-            <li class="info-item"><span>Local</span>Disponible à domicile sur La Seyne-sur-Mer et alentours : Six-Fours, Saint-Mandrier, Ollioules.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <h2>Les avis des clientes Cocozen</h2>
+        <h2>Témoignages</h2>
         <div class="testimonials">
-          <article class="testimonial">
-            <p>“Un moment suspendu, Coralie a des mains en or. Elle sait exactement où relâcher les tensions accumulées par ma posture de travail.”</p>
-            <strong>Laura, Six-Fours</strong>
-          </article>
-          <article class="testimonial">
-            <p>“Après ma cure post-partum, j’ai retrouvé de l’énergie et un sommeil serein. Les rendez-vous à domicile sont un vrai plus.”</p>
-            <strong>Camille, La Seyne-sur-Mer</strong>
-          </article>
-          <article class="testimonial">
-            <p>“Massages prénataux d’une grande douceur, Coralie s’adapte à chaque séance et me guide dans la respiration.”</p>
-            <strong>Élodie, Saint-Mandrier</strong>
-          </article>
+          <blockquote>
+            « L’immersion m’a permis de comprendre comment allier toucher, posture et stratégie sans me perdre. »<br><strong>Maïa A.</strong>
+          </blockquote>
+          <blockquote>
+            « J’ai retrouvé la confiance pour lancer mes offres et signer mes premières clientes en restant alignée. »<br><strong>Julie M.</strong>
+          </blockquote>
+          <blockquote>
+            « Le suivi humain et les outils business sont précieux pour bâtir une activité stable et douce. »<br><strong>Stéphanie R.</strong>
+          </blockquote>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container contact-section">
+    <section>
+      <div class="container contact-panel">
         <div>
-          <h2>Prenez rendez-vous pour votre massage bien-être</h2>
-          <p>Expliquez vos besoins, votre disponibilité et l’adresse de la séance. Coralie vous contacte sous 24h pour valider la réservation et personnaliser votre soin.</p>
-          <p><strong>Disponible du lundi au samedi, de 9h à 19h.</strong></p>
-          <p>Zones desservies : La Seyne-sur-Mer, Six-Fours-les-Plages, Saint-Mandrier-sur-Mer, Ollioules.</p>
+          <h2>Contact</h2>
+          <p>📍 Présentiel à La Seyne-sur-Mer</p>
+          <p>💌 <a href="mailto:contact@coraliemontreuil.fr">contact@coraliemontreuil.fr</a></p>
+          <p>📞 06 18 86 46 34</p>
+          <p>Prends un rendez-vous découverte pour clarifier tes besoins et ton prochain pas.</p>
         </div>
-        <div class="form-systemeio">
-          <!-- Intégrez ici le code du formulaire Système.io -->
-          <iframe src="https://systeme.io/form/123456"></iframe>
+        <div class="card">
+          <h3>Discutons de ton projet</h3>
+          <p>Décris tes envies de reconversion, ton expérience actuelle et les objectifs que tu souhaites atteindre. Je te rappelle pour t’orienter vers la bonne modalité.</p>
+          <a class="btn btn-primary" href="contact.html">Demander un appel découverte</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="container footer-grid">
+  <footer class="footer">
+    <div class="footer-grid">
       <div>
-        <div class="logo">Cocozen</div>
-        <p>Massages bien-être à domicile avec Coralie Montreuil – La Seyne-sur-Mer et alentours.</p>
+        <div class="logo">Coralie Montreuil</div>
+        <p>Formatrice & accompagnante Bien-Être & Business.</p>
       </div>
       <div>
-        <h4 class="footer-title">Coordonnées</h4>
-        <p>06 12 34 56 78<br>contact@cocozen.fr<br>La Seyne-sur-Mer</p>
+        <h4>Navigation</h4>
+        <p><a href="formations.html">Formation Signature</a><br>
+        <a href="cures-massages.html">Formations courtes</a><br>
+        <a href="infos-pratiques.html">Calendrier & Inscriptions</a></p>
       </div>
       <div>
-        <h4 class="footer-title">Explorer</h4>
-        <ul class="info-list">
-          <li><a href="formations.html">Formations</a></li>
-          <li><a href="contact.html">Réserver une séance</a></li>
-          <li><a href="infos-pratiques.html">Infos pratiques</a></li>
-        </ul>
+        <h4>Contact</h4>
+        <p><a href="mailto:cmontreuil83@gmail.com">cmontreuil83@gmail.com</a><br>06 18 86 46 34</p>
       </div>
       <div>
-        <h4 class="footer-title">Suivez Cocozen</h4>
-        <div class="social-links">
-          <a href="https://www.instagram.com" aria-label="Instagram">Instagram</a>
-        </div>
+        <h4>Réseaux & mentions</h4>
+        <p><a href="#">Instagram</a><br>
+        <a href="mentions-legales.html">Mentions légales</a><br>
+        <a href="cgv.html">CGV</a></p>
       </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2024 Cocozen – Coralie Montreuil. Tous droits réservés. <a href="mentions-legales-cgv.html">Mentions légales &amp; CGV</a></p>
     </div>
   </footer>
 </body>

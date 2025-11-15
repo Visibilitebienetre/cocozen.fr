@@ -3,125 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Infos pratiques | Cocozen</title>
-  <meta name="description" content="Tarifs, zones d’intervention et questions fréquentes pour les massages Cocozen à La Seyne-sur-Mer.">
+  <title>Calendrier & Inscriptions – Bien-Être & Business</title>
+  <meta name="description" content="Calendrier des immersions Bien-Être & Business : mini-groupes à La Seyne-sur-Mer, réservations et appels découverte.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root { --vert:#66b3b0; --beige:#FFF6EA; }
+    *, *::before, *::after { box-sizing:border-box; }
+    body { margin:0; font-family:'Manrope',sans-serif; color:#000; background:#fff; line-height:1.7; }
+    header { padding:20px 24px; border-bottom:1px solid #f0f0f0; }
+    nav a { margin-right:16px; text-decoration:none; color:#000; }
+    section { padding:80px 24px; }
+    .container { max-width:1100px; margin:0 auto; }
+    .hero { background:var(--beige); border-radius:32px; padding:60px; }
+    .calendar { display:grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap:24px; }
+    .slot { border:1px solid #f3f3f3; border-radius:24px; padding:24px; background:#fff; box-shadow:0 8px 24px rgba(0,0,0,0.05); }
+    h1,h2,h3 { margin:0 0 16px; }
+    p { margin:0 0 12px; }
+    .btn { display:inline-flex; padding:14px 28px; border-radius:999px; text-decoration:none; font-weight:600; }
+    .btn-primary { background:var(--vert); color:#fff; }
+    .btn-outline { border:1px solid var(--vert); color:var(--vert); }
+    .note { background:#fdfdfd; border-left:4px solid var(--vert); padding:18px; border-radius:16px; }
+    @media(max-width:640px){ .hero{padding:40px;} }
+  </style>
 </head>
 <body>
   <header>
-    <div class="container navbar">
-      <div class="logo">Cocozen</div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="cures-massages.html">Cures &amp; Massages</a></li>
-          <li><a href="a-propos.html">À propos</a></li>
-          <li><a href="formations.html">Formations</a></li>
-          <li><a href="avis.html">Avis</a></li>
-          <li><a href="infos-pratiques.html">Infos pratiques</a></li>
-          <li><a href="contact.html" class="cta">Réserver</a></li>
-        </ul>
-      </nav>
-    </div>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="formations.html">Formation Signature</a>
+      <a href="cures-massages.html">Formations courtes</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="container hero-content">
-        <div class="hero-text">
-          <h1>Préparez votre moment de bien-être</h1>
-          <p>Toutes les informations pour réserver un massage à domicile avec Cocozen sur La Seyne-sur-Mer et alentours.</p>
-        </div>
+    <section>
+      <div class="container hero">
+        <h1>Calendrier & Inscriptions</h1>
+        <p>Mini-groupes intimistes à La Seyne-sur-Mer. Choisis la date qui correspond à ton projet, puis réserve un appel pour valider ta place.</p>
+        <a class="btn btn-primary" href="contact.html">Demander un appel découverte</a>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container two-column">
-        <div>
-          <h2>Zones d’intervention</h2>
-          <ul class="info-list">
-            <li class="info-item"><span>La Seyne-sur-Mer</span>Quartiers Sud et Nord, Tamaris, Balaguier.</li>
-            <li class="info-item"><span>Six-Fours-les-Plages</span>Le Brusc, Les Lônes, centre-ville.</li>
-            <li class="info-item"><span>Saint-Mandrier-sur-Mer</span>Village, Pin Rolland.</li>
-            <li class="info-item"><span>Ollioules</span>Centre historique et collines.</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Frais de déplacement</h3>
-          <p>Les déplacements sont inclus pour les villes listées. Au-delà de 15 km autour de La Seyne-sur-Mer, prévoir un forfait additionnel de 10 €.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container two-column">
-        <div>
-          <h2>Préparer votre séance</h2>
-          <ul class="info-list">
-            <li class="info-item"><span>Espace</span>Prévoyez 2 m x 3 m pour installer la table de massage.</li>
-            <li class="info-item"><span>Ambiance</span>Coralie apporte la musique, mais vous pouvez choisir votre playlist.</li>
-            <li class="info-item"><span>Confort</span>Hydratez-vous avant/après et évitez les repas lourds 1h avant la séance.</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Conditions</h3>
-          <p>Le règlement s’effectue par virement, espèces ou lien de paiement Système.io. Toute annulation doit être signalée 24h à l’avance.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section highlight">
+    <section>
       <div class="container">
-        <h3>Questions fréquentes</h3>
-        <div class="info-list">
-          <div class="info-item">
-            <span>Durée</span>
-            <p>Les massages durent entre 60 et 90 minutes selon la formule choisie. Prévoyez 15 minutes supplémentaires pour l’échange initial.</p>
+        <h2>Dates à venir</h2>
+        <div class="calendar">
+          <div class="slot">
+            <h3>Immersion découverte</h3>
+            <p>3 jours pour explorer les bases du massage.</p>
+            <p><strong>Dates :</strong> 15 → 17 avril 2025</p>
+            <p><strong>Lieu :</strong> La Seyne-sur-Mer</p>
+            <a class="btn btn-outline" href="contact.html">Réserver ma place</a>
           </div>
-          <div class="info-item">
-            <span>Matériel</span>
-            <p>Tout est fourni : table professionnelle, draps, serviettes, huiles végétales bio, coussins de positionnement.</p>
+          <div class="slot">
+            <h3>Offre Premium Signature</h3>
+            <p>Parcours 6 mois – ouverture printemps 2025.</p>
+            <p><strong>Démarrage :</strong> 6 mai 2025</p>
+            <p><strong>Format :</strong> mini-groupe (6 participantes)</p>
+            <a class="btn btn-outline" href="contact.html">Réserver ma place</a>
           </div>
-          <div class="info-item">
-            <span>Contre-indications</span>
-            <p>Merci de signaler toute pathologie ou traitement médical. En cas de doute, un accord médical peut être demandé.</p>
+          <div class="slot">
+            <h3>Module Kobido</h3>
+            <p>2 jours intensifs visage & glow.</p>
+            <p><strong>Dates :</strong> 3 → 4 juin 2025</p>
+            <p><strong>Lieu :</strong> Toulon</p>
+            <a class="btn btn-outline" href="contact.html">Réserver ma place</a>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="note">
+          <h2>Mini-groupes & conditions</h2>
+          <p>Chaque session accueille 4 à 6 participantes pour garantir un feedback généreux. Ton inscription est confirmée après l’appel découverte et la signature du contrat.</p>
+          <p>Présentiel : La Seyne-sur-Mer / Toulon – Var (83). Tout le matériel est fourni, tu viens avec ta tenue et ta curiosité.</p>
+          <a class="btn btn-primary" href="contact.html">Demander un appel découverte</a>
         </div>
       </div>
     </section>
   </main>
-
-  <footer>
-    <div class="container footer-grid">
-      <div>
-        <div class="logo">Cocozen</div>
-        <p>Massages bien-être à domicile avec Coralie Montreuil – La Seyne-sur-Mer et alentours.</p>
-      </div>
-      <div>
-        <h4 class="footer-title">Coordonnées</h4>
-        <p>06 12 34 56 78<br>contact@cocozen.fr<br>La Seyne-sur-Mer</p>
-      </div>
-      <div>
-        <h4 class="footer-title">Explorer</h4>
-        <ul class="info-list">
-          <li><a href="formations.html">Formations</a></li>
-          <li><a href="contact.html">Réserver une séance</a></li>
-          <li><a href="infos-pratiques.html">Infos pratiques</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="footer-title">Suivez Cocozen</h4>
-        <div class="social-links">
-          <a href="https://www.instagram.com" aria-label="Instagram">Instagram</a>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2024 Cocozen – Coralie Montreuil. Tous droits réservés. <a href="mentions-legales-cgv.html">Mentions légales &amp; CGV</a></p>
-    </div>
-  </footer>
 </body>
 </html>
