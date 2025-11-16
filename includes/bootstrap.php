@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . '/config.php';
+require_once __DIR__ . '/database.php';
 
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
@@ -9,21 +10,40 @@ $cmsContent = load_content();
 
 function load_content(): array
 {
-    $path = CMS_DATA_FILE;
-    if (!file_exists($path)) {
-        return [];
+    $pdo = cms_db();
+    $stmt = $pdo->query('SELECT content_key, content_value FROM cms_content ORDER BY content_key');
+    $rows = $stmt->fetchAll();
+
+    $data = [];
+    foreach ($rows as $row) {
+        $data[$row['content_key']] = $row['content_value'];
     }
 
-    $json = file_get_contents($path);
-    $data = json_decode($json, true);
-
-    return is_array($data) ? $data : [];
+    return $data;
 }
 
 function save_content(array $data): bool
 {
-    $json = json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
-    return (bool) file_put_contents(CMS_DATA_FILE, $json);
+    $pdo = cms_db();
+
+    try {
+        $pdo->beginTransaction();
+        $stmt = $pdo->prepare('REPLACE INTO cms_content (content_key, content_value) VALUES (:key, :value)');
+        foreach ($data as $key => $value) {
+            $stmt->execute([
+                ':key' => $key,
+                ':value' => (string) $value,
+            ]);
+        }
+        $pdo->commit();
+    } catch (Throwable $e) {
+        if ($pdo->inTransaction()) {
+            $pdo->rollBack();
+        }
+        return false;
+    }
+
+    return true;
 }
 
 function get_content(string $key, string $default = ''): string
@@ -56,7 +76,7 @@ function get_pairs(string $key): array
 
 function is_logged_in(): bool
 {
-    return isset($_SESSION[CMS_SESSION_KEY]) && $_SESSION[CMS_SESSION_KEY] === CMS_ADMIN_USER;
+    return isset($_SESSION[CMS_SESSION_KEY]) && $_SESSION[CMS_SESSION_KEY] !== '';
 }
 
 function require_login(): void

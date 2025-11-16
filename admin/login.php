@@ -3,11 +3,16 @@ require_once __DIR__ . '/../includes/bootstrap.php';
 
 $error = '';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $username = $_POST['username'] ?? '';
+    $username = trim($_POST['username'] ?? '');
     $password = $_POST['password'] ?? '';
 
-    if ($username === CMS_ADMIN_USER && password_verify($password, CMS_ADMIN_PASS_HASH)) {
-        $_SESSION[CMS_SESSION_KEY] = CMS_ADMIN_USER;
+    $pdo = cms_db();
+    $stmt = $pdo->prepare('SELECT username, password_hash FROM cms_users WHERE username = :username LIMIT 1');
+    $stmt->execute([':username' => $username]);
+    $user = $stmt->fetch();
+
+    if ($user && password_verify($password, $user['password_hash'])) {
+        $_SESSION[CMS_SESSION_KEY] = $user['username'];
         header('Location: /admin/index.php');
         exit;
     }
