@@ -83,6 +83,14 @@ nav a {
   transition: color 0.3s ease;
 }
 
+.nav-admin {
+  padding: 0.4rem 0.9rem;
+  border: 1px solid rgba(102, 179, 176, 0.4);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  color: var(--color-primary);
+}
+
 nav a:hover,
 nav a:focus {
   color: var(--color-primary);
