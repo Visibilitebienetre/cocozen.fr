@@ -11,9 +11,9 @@ function cms_db(): PDO
 
     try {
         $pdo = new PDO(
-            CMS_DB_DSN,
-            CMS_DB_USER,
-            CMS_DB_PASSWORD,
+            cms_db_dsn(),
+            cms_db_username(),
+            cms_db_password(),
             [
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
                 PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
